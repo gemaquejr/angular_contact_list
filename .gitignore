@@ -1,0 +1,22 @@
+# Arquivos de compilação e dependências
+/node_modules
+/dist
+/.firebase
+/firebase.json
+/.firebaserc
+
+# Arquivos gerados pelo Angular CLI
+/e2e/*.log
+/e2e/*.screenshots
+/e2e/videos
+/src/**/*.js
+/src/**/*.js.map
+/src/**/*.d.ts
+/src/**/*.metadata.json
+/src/**/*.ngfactory.ts
+/src/**/*.ngfactory.d.ts
+/src/**/*.ngsummary.json
+/src/**/*.css
+
+# Arquivos de configuração pessoal ou sensíveis
+.env
