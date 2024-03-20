@@ -4,5 +4,9 @@
 @tailwind utilities;
 
 :root {
-    color-scheme: light dark;
-  }
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-black;
+}
