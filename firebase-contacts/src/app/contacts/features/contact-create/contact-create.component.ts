@@ -10,7 +10,7 @@ import { RouterLink, Router } from '@angular/router';
 import { IconRocket } from '../../../shared/ui/icons/rocket';
 import { IconBack } from '../../../shared/ui/icons/back';
 import { ContactsService } from '../../data-access/contacts.service';
-import { ContactForm } from '../../../shared/interfaces/contacts.interface';
+import { ContactForm } from '../../shared/interfaces/contacts.interface';
 
 export interface CreateForm {
   fullName: FormControl<string>;

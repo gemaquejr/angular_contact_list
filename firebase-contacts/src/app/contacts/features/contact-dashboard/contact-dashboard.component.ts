@@ -4,7 +4,7 @@ import { AsyncPipe } from '@angular/common';
 
 import { CardContactComponent } from '../../ui/card-contact/card-contact.component';
 import { ContactsService } from '../../data-access/contacts.service';
-import { Contact } from '../../../shared/interfaces/contacts.interface';
+import { Contact } from '../../shared/interfaces/contacts.interface';
 import { SearchBarComponent } from '../../ui/search-bar/search-bar.component';
 import { of } from 'rxjs';
 

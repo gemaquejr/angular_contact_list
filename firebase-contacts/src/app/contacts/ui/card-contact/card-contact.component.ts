@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Contact } from '../../../shared/interfaces/contacts.interface';
+import { Contact } from '../../shared/interfaces/contacts.interface';
 import { MenuComponent } from '../menu/menu.component';
 
 @Component({
