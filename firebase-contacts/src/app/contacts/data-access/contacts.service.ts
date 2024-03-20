@@ -8,7 +8,10 @@ import {
   deleteDoc,
   doc,
   getDoc,
+  getDocs,
+  query,
   updateDoc,
+  where,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
@@ -38,6 +41,20 @@ export class ContactsService {
       //catch error
       return undefined;
     }
+  }
+
+  async searchContactByQuery(name: string) {
+    const q = query(
+      this._collection,
+      where('fullName', '>=', name),
+      where('fullName', '<=', name + '\uf8ff'),
+    );
+    const querySnapshot = await getDocs(q);
+    let contacts: Contact[] = [];
+    querySnapshot.forEach((doc) => {
+      contacts = [...contacts, { id: doc.id, ...doc.data() } as Contact];
+    });
+    return contacts;
   }
 
   createContact(contact: ContactForm) {
